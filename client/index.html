@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>WordPress KW5</title>
+</head>
+<body>
+    <div id="top navbar">
+        <nav class="navbar navbar-light bg-light">
+            <h3>
+                <i class="fab fa-wordpress-simple"> My Sites</i>
+            </h3>
+            <ul class="list-group list-group-horizontal-lg">
+                <li class="list-group-item" >
+                    <a class="nav-link text-muted" href="#"><i class="fab fa-wpforms"> Reader</i></a>
+                </li>
+            </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                    <ul class="list-group list-group-horizontal-lg">
+                        <li class="list-group-item" >
+                            <button class="btn btn-outline-primary" href="#" role="button" class="text-decoration-none" v-on:click.prevent="writeClick()"> <i class="fab fa-forumbee"> Write</i> </button> 
+                        </li>
+                        <li class="list-group-item" >
+                            <h3> <i class="fab fa-fort-awesome-alt"></i></h3>
+                        </li>
+                        <li class="list-group-item" >
+                            <h3> <i class="fas fa-heart-broken"></i></h1>
+                        </li>
+                    </ul>
+                </nav>
+    </div>
+        <div class="d-flex bd-highlight mb-3">
+                    <div class="sidenav p-3 mb-2 bg-gradient-light text-white" >
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#" class="text-decoration-none text-muted"><i class="fas fa-tv"></i> View Site</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" class="text-decoration-none text-muted"><i class="fas fa-chart-bar"></i> Stats</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" class="text-decoration-none text-muted"><i class="fas fa-heartbeat"></i>Activity</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" class="text-decoration-none text-muted"><i class="fas fa-briefcase"></i> plan</a>
+                            </li>
+                        </ul>
+                            <p class="text-muted">Manage</p>
+                            <ul class="list-group">
+                                <li class="list-group-item text-muted">
+                                        <div class="navbar navbar-light bg-light">
+                                            <div>
+                                                <i class="fas fa-file-alt"> Site Pages</i>  
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-outline-primary" >Add</button>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="list-group-item text-muted">
+                                        <div class="col">
+                                            <i class="fas fa-edit"> Blog Post</i> 
+                                            <button class="btn btn-outline-primary" >Add</button>
+                                        </div>
+                                </li>
+                                <li class="list-group-item text-muted">
+                                        <div class="navbar navbar-light bg-light">
+                                            <i class="fas fa-image"> Media</i> 
+                                            <button class="btn btn-outline-primary" >Add</button> 
+                                        </div>
+                                </li>
+                                <li class="list-group-item text-muted">
+                                        <div class="col">
+                                            <a href="#" class="text-decoration-none text-muted" ><i class="fas fa-comments"> Comment</i></a>
+                                        </div>
+                                </li>
+                                <li class="list-group-item text-muted">
+                                    <div class="navbar navbar-light bg-light">
+                                        <div>
+                                            <i class="fas fa-rss-square"> FeedBack</i> 
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-outline-primary" >Add</button> 
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-muted">
+                                    <div class="navbar navbar-light bg-light">
+                                        <div>
+                                            <i class="fas fa-plug"> Plugins</i> 
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-outline-primary" >Add</button> 
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-muted">
+                                    <a href="#" class="text-decoration-none text-muted"><i class="fas fa-cloud-download-alt"> Import</i></a>
+                                </li>
+                            </ul>
+                            <p class="text-muted">Personalize</p>
+                            <div class="navbar navbar-light bg-light">
+                                <a href="#" class="text-decoration-none text-muted"><i class="fas fa-tools"> Customize</i></a>
+                            </div>
+                          </div>
+                <div class="page-content">
+                    <!-- bar page content -->
+                    <div id="content navbar">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="d-flex justify-content-between">
+                                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button> -->
+                                <div class="navbar-collapse" id="navbarTogglerDemo01">
+                                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#" > Published<span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" >Drafts</a>
+                                        </li>
+                                </ul>
+                                </div>
+                            </div>
+                            </nav>
+                    </div>
+                        <div id="app">
+                            <div class="container">
+                                <div class="justify-content-md-between" id="container"  >
+                                    <div class="article-title">
+                                        <template v-for="key in articles">
+                                            <template v-if="key.statusPublish== true">
+                                                <p>{{key.created_at}}</p>
+                                                <h3>
+                                                    {{key.Title}}
+                                                </h3>
+                                            </div>
+                                            <div class="justify-content-md-between" style="width: 50rem;">
+                                                    <p>{{key.Article}}</p>
+                                            </template>
+                                        </div>
+                                                
+                                        </template>
+                                </div>
+                            </div>
+                            <div class="editor" id="editor">
+                                <form v-on:submit.prevent="addArticle()">
+                                    <div class="form-group">
+                                        <label for="article-title">Article Title</label>
+                                        <input v-model="Title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="your title here">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Article</label>
+                                        <textarea v-model="Article" class="form-control " id="exampleFormControlTextarea1" cols="60" rows="20"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="statusPublish">publish your Article?</label>
+                                        <select v-model="statusPublish">
+                                                <option disabled value="">Please select one</option>
+                                                <option value="true">publish</option>
+                                                <option value="false">maybe later</option>
+                                              </select>
+                                    </div>                                    
+                                    <input type="submit" class="btn btn-outline-primary" value="Submit article">
+                                    </form>
+                            </div>
+                        </div>
+                    </div> 
+            </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
