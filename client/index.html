@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="348804097042-g8i47memp91iu9be12u9l0b8qln31bob.apps.googleusercontent.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" href="./files/accusoft-brands.svg" color="#2a505b">
+    <link href="./style/css.css" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="./style/bootstrap.css">
+    <link rel="stylesheet" media="all" href="./style/parrot.css">
+    <link rel="stylesheet" href="./style/vueWysiwyg.css">
+    <title> AltLab | Blog</title>
+    </head>
+    <body>
+        <div id="app">
+            <!-- begin header -->
+            <header class="header">
+                <div class="container">
+                    <div class="navbar navbar-expand-lg">
+                        <div class="navbar-brand">
+                            <h1>
+                                    <i class="fab fa-accusoft"></i> | Blog
+                            </h1>
+                        </div>
+                        <div class="navbar-collapse collapse show" id="navbarDropdown" >
+                                <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownLink">
+                                    <a class="dropdown-item" href="#">Graphic Design</a>
+                                    <a class="dropdown-item active" href="#">Web Design</a>
+                                    <a class="dropdown-item" href="#">Resources</a>
+                                    <a class="dropdown-item" href="#">Freebies</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Inspiration</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">login</a>
+                                </li>
+                                </ul>
+                                <div class="header-article">The 25 Best Productivity Apps to Try in 2018</div>
+                                <div class="share">
+                                <div class="share-title">Spread your love, <strong>share the article</strong></div>
+                                <div class="share-list">
+                                    <a href="#" class="share-btn share-twitter btn">
+                                    <img class="share-icon" src="files/icon-twitter-white.svg" alt="Share on Twitter">
+                                    <span class="share-label">Share on Twitter</span>
+                                    </a>
+                                    <a href="#" class="share-btn share-facebook btn">
+                                    <img class="share-icon" src="files/icon-facebook-white.svg" alt="Share on Facebook">
+                                    <span class="share-label">Share on Facebook</span>
+                                    </a>
+                                </div>
+                                </div>
+                                <div class="socials">
+                                <a class="socials-item" href="#">
+                                    <img class="socials-pic" src="files/icon-twitter.svg" alt="Twitter">
+                                </a>
+                                <a class="socials-item" href="#">
+                                    <img class="socials-pic" src="files/icon-facebook.svg" alt="Facebook">
+                                </a>
+                                <a class="socials-item" href="#">
+                                    <img class="socials-pic" src="files/icon-linkedin.svg" alt="LinkedIn">
+                                </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end header -->
+            <!-- begin content -->
+            <allpublish :articles="articles"></allpublish>
+            <writearticle></writearticle>
+            <signin></signin>
+            <signup></signup>
+            <!-- end content -->
+            <!-- begin footer -->
+            <footer class="footer">
+            <div class="container">
+                <a class="footer-logo" href="#">AltLab</a>
+                <div class="footer-about">this is the extend from us to publish anything you want to share</div>
+                <div class="subscribe">
+                <form class="subscribe-form">
+                    <div class="form-group">
+                    <input class="form-control" type="email" placeholder="Enter your email" required="">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                </form>
+                <div class="subscribe-content"><strong>No spam.</strong> no worries for any subject disturb your creation </div>
+                </div>
+                <div class="socials">
+                <a class="socials-item" href="#">
+                    <img class="socials-pic" src="files/icon-twitter.svg" alt="Twitter">
+                </a>
+                <a class="socials-item" href="#">
+                    <img class="socials-pic" src="files/icon-facebook.svg" alt="Facebook">
+                </a>
+                <a class="socials-item" href="#">
+                    <img class="socials-pic" src="files/icon-linkedin.svg" alt="LinkedIn">
+                </a>
+                </div>
+                <nav class="footer-nav">
+                <a class="footer-link" href="https://niceverynice.com/demo/parrot/terms.html">Terms</a>
+                <a class="footer-link" href="https://niceverynice.com/demo/parrot/terms.html">Privacy Policy</a>
+                <a class="footer-link" href="https://niceverynice.com/demo/parrot/contacts.html">Support</a>
+                </nav>
+            </div>
+            </footer>
+            <!-- end footer -->
+        </div>
+        <!-- begin scripts -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="./script/components/allpublish.js"></script>
+        <script src="./script/components/writeArticle.js"></script>
+        <script src="./script/components/signin.js"></script>
+        <script src="./script/components/signup.js"></script>
+        <script src="./script/main.js"></script>
+        <script src="./script/vueWysiwyg.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+        
+        <!-- end scripts -->
+    </body>
+</html>
